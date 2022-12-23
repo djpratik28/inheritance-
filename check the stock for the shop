@@ -1,0 +1,15 @@
+Eggs = 100 
+Milkbags= 50 
+def buy(Eggs,Milkbags):
+  E = int(input("how many egges do you want to purchase?'\n'"))
+  M = int(input("how many milkbags do you want to purchase? '\n'"))
+  
+  Eggs = Eggs -E
+  Milkbags = Milkbags -M
+
+  print('Customer has bought',E,"Egges and",M,"Milkbags")
+  return(Eggs,Milkbags)
+  Eggs,Milkbags = buy(Eggs,Milkbags)
+def Stock(Eggs,Milkbags):
+  print('Eggs:',Eggs,'Milkbags:',Milkbags)
+  Stock(Eggs,Milkbags)
